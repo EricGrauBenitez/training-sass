@@ -1,0 +1,68 @@
+// Importa las variables
+@import '_variables';
+
+@mixin button-styles {
+    background-color: $color-primary;
+    color: white;
+    padding: 10px 20px;
+  }
+// Estilos globales
+body {
+    font-family: $font-family;
+    background-color: $color-primary;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: darken($color-primary, 10%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .button {
+    @include button-styles;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  
+  .wrapper {
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
